@@ -1,0 +1,147 @@
+
+.blogContent{
+padding: 10px 60px 30px 60px;
+}
+.blogTitle {
+    font-family: 'Abel', sans-serif;
+    margin: 10px 10px 10px 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+}
+.editPostButton
+{
+    width: 6%;
+    padding: 10px;
+    cursor: pointer;
+    background: #ed2553;
+    color: #fff;
+    float:right;
+    box-shadow: 0 10px 20px -8px rgb(240,75,113);
+    margin: 10px 10px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+text-align: justify;
+padding: 0px 10px 10px 10px;
+}
+
+.likeBlogButton span
+{
+    color: #9d9da4;
+    font-family: monospace;
+}
+.likeBlogButton
+{
+    padding-left:10px;
+}
+#likeBlog
+{
+    width: 10%;
+    margin-top: 0;
+    min-width: 100px;
+
+}
+.likeBlogButton #likeBlog
+{
+    display: block;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgba(240,75,113);
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    transition:0.3s ease;
+}
+.likeBlogButton .likeBlog:hover
+{
+    transform: translateY(-3px);
+}
+.llikeBlogButton.likeBlog .fa {
+    margin-right: 5px;
+}
+.animate-like
+{
+    animation-name: likeAnimation;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.65s;
+}
+@keyframes likeAnimation
+{
+    0%
+    {
+        transform: scale(30);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+.allCommentsHeading
+{
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.allCommentsBox
+{
+    background-color: #E2E4E6;
+    padding: 10px 10px 10px 10px;
+    margin-left: 10px;
+    width: 60%;
+}
+.task-card
+{
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+}
+.newComment
+{
+    color: #fff;
+    background-color: #ed2553;
+    cursor: pointer;
+    font-size: 15px;
+    padding:10px 10px 10px 10px;
+    max-width: 100px;
+    font-weight: 400;
+    box-shadow: 0 10px 20px -8px rgb(240,75,113);
+}
+#commentContent
+{
+    width: 60%;
+}
+.task-meta
+{
+    float: right;
+}
+.commentBody
+{
+    display: inline-table;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+#commentCount
+{
+    color: #000;
+}
+
+
+
+
+
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */

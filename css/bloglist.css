@@ -1,0 +1,180 @@
+.post {
+    position: relative;
+    display: inline-table;
+    width: 40%;
+    height: 20%;
+    background: #fff;
+    box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px 10px 10px 20px;
+    float:left;
+    border-radius: 15px;
+}
+ .post:hover
+ {
+     box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+ }   
+.post-left {
+        width: 15%;            
+        max-width: 15%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+}
+.post-content {
+        width: 75%;           
+        display: table-cell;
+        text-align: left;
+        background-color: #E8E8E8;
+        color: #000000;
+        border-radius: 0 15px 15px 0;
+        padding: 0 20px;      
+}
+.post-title{
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    color: #2b312b;
+    font-size: 25px;
+    overflow: hidden;
+    display: block;
+    height: 25px;
+    }
+.post-more {
+    float: right;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.post-desc{
+    height: 55px;
+    overflow: hidden;
+    margin-bottom: 0 !important;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0 !important;
+    color: #fff;
+    background-color: orange;
+    background-size: 2000% 2000%;
+}
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@-webkit-keyframes Gradient 
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+@-moz-keyframes Gradient 
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+@keyframes Gradient 
+{
+    0%
+    {
+        background-position: 0% 50%;
+    }
+    50%
+    {
+        background-position: 100% 50%;
+    }
+    100%
+    {
+        background-position: 0% 50%;
+    }
+}
+.deletePost
+{
+    padding-top:5px;
+    padding-right: 5px;
+    position: relative;
+    float: right;
+    font-size: 25px;
+    color: #000;
+    font-family: 'Abel',saans-serif;
+    width: 10%;
+    background-color: #E8E8E8;
+}
+.deletePost:hover,
+.deletePost:focus
+{
+    color: #f44336;
+    cursor: pointer;
+}
+.deletePrompt
+{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 25px;
+    opacity: 1;
+    background-color: rgba(0,0,0);
+    background-color: rgba(0,0,0,0.8);
+}
+.deleteContent
+{
+    background-color: #fefefe;
+    margin: 15% auto auto auto;
+    border: 1px solid #fff;
+    width: 30%;
+    padding: 20px 20px 20px 20px;
+    opacity: 1;
+    overflow: hidden;
+    color : #000;
+}
+.deleteContainer
+{
+    font-size:18px;
+    letter-spacing: 0.5;
+}
+.deleteButton
+{
+    float: left;
+    width: 40%;
+    background-color: #f44336;
+}
+.CancelDeleteButton
+{
+    float: right;
+    width: 40%;
+}
