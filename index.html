@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Place all CSS for header in this file -->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+			 <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <input id="signUpButtonClick" class="btn" type="button" onclick="openSignUpButton()" value="Sign Up">
+			<input id="loginButtonClick" class="btn" type="button" onclick="openSignIn()" value="Sign in">
+			<a id="pageTitle" class="logo">Scribbler</a>
+            <p class="abc">Explore, Imagine, Create</p>
+        </div>
+
+<!-- Insert code for All Posts & Create Post button here -->
+            <div class="postButtons">
+                <input id="allPostClick" class="middleButtons" type="button" onclick="getAllPosts()" value="All Posts">
+                <input id="newPostClick" class="middleButtons" type="button" onclick="openCreatePost()" value="Create Post">
+            </div>
+    </div>
+    
+
+  <!-- Insert code for Sign In modal here -->
+
+        <div id="myModal" class="modal">
+            <form class="modal-content" action="/action_page.php">
+                <span onclick="onCloseModalClicked()" class="close_signIn" title="CloseModal">&times;</span>
+                  <div class="container">
+                    <h1>Welcome Back!</h1>
+                    <hr>
+                    <label for="Username" class="label"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw" class="label"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <div class="clearfix" class="label">
+                    <button type="submit" class="signinbtn" >Sign in</button>
+                    </div>
+                </div>
+                <div id="signUpPrompt" class="signUpForm">Not a member?
+                    <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+                </div>
+             </form>
+        </div>
+
+   <!-- Insert code for Sign Up modal here -->
+        <div id="myModal1" class="modal">
+            <div class="modal-content-signup">
+                <span onclick="onCloseModalClicked()" class="close_signIn" title="CloseModal">&times;</span>
+                    <form class="modal-content-signUp" action="/action_page.php">
+                        <div class="container-signUp">
+			                <h1>Get Started</h1>
+			                <hr>
+			                <label for="Fullname" class="label">Full Name</label>
+			                <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+			                <label for="Username" class="label">Username</label>
+			                <input type="text" placeholder="Enter Username" name="Username" required>
+			                <label for="psw" class="label">Password </label>
+			                <input type="password" placeholder="Enter Password" name="psw" required>
+			                <label for="pswrepeat" class="label">Confirm Password</label>
+			                <input type="password" placeholder="Confirm Password" name="pswrepeat" required>
+			                <div class="clearfix">
+			                    <button type="submit" class="signupbtn" >Sign Up</button>
+			                </div>	
+                        </div>
+                    </form>
+            </div>
+        </div>
+
+  <!-- Insert code for Create Post modal here -->
+	   <div id="newPostModal" class="newPostBox">
+            <div class="newPost-Content">
+                <span onclick="onCloseNewPost()" class="close_newPost">&times;</span>
+                <h1 id="formHeader">Pen Your Post</h1>
+                <form id="newPostForm" action="/action_page.php">
+	                <label for=newPostTitle>Title: </label>
+	                <br/>
+	                <input id="newPostTitle" type="text" name="Title" class="post-title">
+	                <br/>
+	                <br/>
+	                <label for="postContent">Content: </label>
+	                <textarea id="postContent" rows="30" cols="23" name="Content"></textarea>
+	                <input id="newPostSubmit" type="submit" value="Create" align="right">
+				</form>
+            </div>
+        </div>
+
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>               
