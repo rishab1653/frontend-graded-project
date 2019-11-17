@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+        
+        <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+        <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+        <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+    <style>        
+    </style>     
+</head>
+<body>
+      <div id="main-container-div">
+               
+        <div class="header">
+ <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+            <input id="signUpButtonClick" class="btn" type="button" onclick="openSignUpButton()" value="Sign Up">
+            <input id="loginButtonClick" class="btn" type="button" onclick="openSignIn()" value="Sign in">
+            <a id="pageTitle" class="logo">Scribbler</a>
+            <p class="abc">Explore, Imagine, Create</p>
+        </div>
+    
+    </div>
+  <!-- Insert code for Sign In modal here -->
+    <div id="myModal" class="modal">
+            <form class="modal-content" action="/action_page.php">
+                <span onclick="onCloseModalClicked()" class="close_signIn" title="CloseModal">&times;</span>
+                <div class="container">
+                    <h1>Welcome Back!</h1>
+                    <hr>
+                    <label for="Username" class="label"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw" class="label"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <div class="clearfix" class="label">
+                    <button type="submit" class="signinbtn" >Sign in</button>
+                    </div>
+                </div>
+                <div id="signUpPrompt" class="signUpForm">Not a member?
+                    <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+                </div>
+            </form>
+   </div>
+
+    
+    <div id="myModal1" class="modal">
+            <div class="modal-content-signup">
+                <span onclick="onCloseModalClicked()" class="close_signIn" title="CloseModal">&times;</span>
+                    <form class="modal-content-signUp" action="/action_page.php">
+                        <div class="container-signUp">
+                            <h1>Get Started</h1>
+                            <hr>
+                            <label for="Fullname" class="label">Full Name</label>
+                            <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                            <label for="Username" class="label">Username</label>
+                            <input type="text" placeholder="Enter Username" name="Username" required>
+                            <label for="psw" class="label">Password </label>
+                            <input type="password" placeholder="Enter Password" name="psw" required>
+                            <label for="pswrepeat" class="label">Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password" name="pswrepeat" required>
+                            <div class="clearfix">
+                                <button type="submit" class="signupbtn" >Sign Up</button>
+                            </div>  
+                        </div>
+                    </form>
+            </div>
+   </div>   
+
+   <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+            <h3 id="blogTitleNew"><center><b>The legacy of Jimi Hendrix</b></center></h3>
+        </div>
+
+        <div class="blogAuthor">
+                <button type="button" id="editPostClick" class="editPostButton" onclick="editPost()">Edit
+                 <i class="fa fa-edit"></i>
+                </button>
+            <!-- Insert code for Edit/Save button and  -->
+        <p>Jimi</p>
+        </div>
+
+        <div class="blogText">
+            <p id="blogBody">
+            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
+             </p>
+        </div>
+
+    <!-- Insert code for Like button, Comment button, Comment box here-->
+
+        <div class="likeBlogButton">
+            <button id="likeBlog" onclick="postLiked()">
+            <i class="fa fa-thums-up">Like</i>
+            </button>
+            <span id="commentCount">Be the first one to like this!</span>
+        </div>
+
+
+        <div class="commentContainer">
+            <form class="commentBody">
+                <label for="commentContent">
+                    <textarea placeholder="Leave a comment...." id="commentContent" rows="7" cols="90" name="Content"></textarea>
+                    <br>
+                    <button type="button" class="newComment" onclick="addComment()">Comment</button>
+                </label>
+            </form>
+            <p class="allCommentsHeading">All Comments</p>
+            <div class="allCommentsBox" id="commentBox">
+                 <div class="contentOfComment"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="..\js\post.js"></script>
+    <script src="..\js\header.js"></script>
+    
+</body>
+</html>
